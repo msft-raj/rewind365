@@ -1,0 +1,85 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.19",
+  "version": "1.0.0",
+  "id": "b3652476-efb1-4aef-bab2-04b6342bb529",
+  "developer": {
+    "name": "Contoso",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+  },
+  "name": {
+    "short": "Hello World",
+    "full": "Hello World App"
+  },
+  "description": {
+    "short": "Hello World App for Microsoft Teams",
+    "full": "This sample app provides a very simple app. You can extend this to add more content and capabilities."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#60A18E",
+  "staticTabs": [
+    {
+      "entityId": "com.contoso.helloworld.hellotab",
+      "name": "Hello Tab",
+      "contentUrl": "https://app-hello-world-devcom.azurewebsites.net/hello",
+      "scopes": [
+        "personal"
+      ]
+    },
+    {
+      "entityId": "conversations",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://app-hello-world-devcom.azurewebsites.net/configure",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "bots": [
+    {
+      "botId": "b3652476-efb1-4aef-bab2-04b6342bb529",
+      "needsChannelSelector": false,
+      "isNotificationOnly": false,
+      "scopes": [
+        "team",
+        "personal"
+      ]
+    }
+  ],
+  "composeExtensions": [
+    {
+      "botId": "b3652476-efb1-4aef-bab2-04b6342bb529",
+      "commands": [
+        {
+          "id": "getRandomText",
+          "description": "Gets some random text and images that you can insert in messages for fun.",
+          "title": "Get some random text for fun",
+          "initialRun": true,
+          "parameters": [
+            {
+              "name": "cardTitle",
+              "description": "Card title to use",
+              "title": "Card title"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "permissions": [],
+  "validDomains": [
+    "app-hello-world-devcom.azurewebsites.net"
+  ]
+}

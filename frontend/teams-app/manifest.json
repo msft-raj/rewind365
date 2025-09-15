@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.19",
+  "version": "1.0.8",
+  "id": "2aa4daa4-7ea6-4c69-85f4-ce81edfc3494",
+  "developer": {
+    "name": "Rewind365 Team",
+    "websiteUrl": "https://orange-pebble-065c7cd0f.1.azurestaticapps.net",
+    "privacyUrl": "https://orange-pebble-065c7cd0f.1.azurestaticapps.net/privacy",
+    "termsOfUseUrl": "https://orange-pebble-065c7cd0f.1.azurestaticapps.net/termsofuse"
+  },
+  "name": {
+    "short": "Rewind365",
+    "full": "Rewind365 - Daily AI Digest"
+  },
+  "description": {
+    "short": "AI-powered daily digest for Teams and Outlook",
+    "full": "Stay up to date with personalized AI summaries of your Teams conversations and Outlook emails."
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#60A18E",
+  "staticTabs": [
+    {
+      "entityId": "rewind365-personal",
+      "name": "Daily Digest",
+      "contentUrl": "https://orange-pebble-065c7cd0f.1.azurestaticapps.net/",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "configurableTabs": [
+    {
+      "configurationUrl": "https://orange-pebble-065c7cd0f.1.azurestaticapps.net/config",
+      "canUpdateConfiguration": true,
+      "scopes": [
+        "team"
+      ]
+    }
+  ],
+  "permissions": [],
+  "validDomains": [
+    "orange-pebble-065c7cd0f.1.azurestaticapps.net"
+  ]
+}

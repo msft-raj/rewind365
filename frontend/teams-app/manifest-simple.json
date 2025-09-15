@@ -1,0 +1,39 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.19/MicrosoftTeams.schema.json",
+  "manifestVersion": "1.19",
+  "version": "1.0.0",
+  "id": "8f3e2d1c-4b5a-4e67-9876-1a2b3c4d5e6f",
+  "developer": {
+    "name": "Developer",
+    "websiteUrl": "https://www.microsoft.com",
+    "privacyUrl": "https://www.microsoft.com/privacy",
+    "termsOfUseUrl": "https://www.microsoft.com/termsofuse"
+  },
+  "name": {
+    "short": "Test App",
+    "full": "Test Application"
+  },
+  "description": {
+    "short": "Test application",
+    "full": "Test application for development"
+  },
+  "icons": {
+    "outline": "outline.png",
+    "color": "color.png"
+  },
+  "accentColor": "#60A18E",
+  "staticTabs": [
+    {
+      "entityId": "test-tab",
+      "name": "Test",
+      "contentUrl": "https://thankful-mud-0197d280f.2.azurestaticapps.net/home",
+      "scopes": [
+        "personal"
+      ]
+    }
+  ],
+  "permissions": [],
+  "validDomains": [
+    "thankful-mud-0197d280f.2.azurestaticapps.net"
+  ]
+}
